@@ -2,6 +2,27 @@
 
 A full-stack Task Manager application built using the **MERN Stack** (MongoDB, Express.js, React, Node.js) with **Material UI** for a clean and responsive user interface.
 
+![React](https://img.shields.io/badge/React-19-blue)
+![Node.js](https://img.shields.io/badge/Node.js-Express-green)
+![MongoDB](https://img.shields.io/badge/Database-MongoDB-brightgreen)
+![License](https://img.shields.io/badge/License-Portfolio-lightgrey)
+
+
+## 📑 Table of Contents
+
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Environment Variables](#-environment-variables)
+- [Project Structure](#-project-structure)
+- [Installation](#-installation)
+- [Future Enhancements](#-future-enhancements)
+- [Live Demo](#-live-demo)
+- [Application Preview](#-application-preview)
+- [License](#-license)
+- [Author](#-author)
+
+---
+
 ## ✨ Features
 
 - Create, Read, Update and Delete (CRUD) tasks
@@ -22,27 +43,73 @@ A full-stack Task Manager application built using the **MERN Stack** (MongoDB, E
 ### Frontend
 
 - React
-- Material UI (MUI)
+- MUI (Material UI)
 - Axios
+- JavaScript (ES6+)
 
 ### Backend
 
 - Node.js
 - Express.js
-- MongoDB
+- MongoDB Atlas
 - Mongoose
 - Multer
+- REST API
+
+---
+
+## 🔐 Environment Variables
+
+### Backend (`backend/.env`)
+
+```env
+PORT=8082
+MONGODB_URI=<your_mongodb_connection_string>
+```
+
+### Frontend (`frontend/.env`)
+
+```env
+REACT_APP_API_URL=https://task-manager-mern-4m1f.onrender.com/tasks
+```
+
+## 🚀 Deployment
+
+- Vercel (Frontend)
+- Render (Backend)
 
 ---
 
 ## 📁 Project Structure
 
-```
+```text
 task-manager-mern/
 │
 ├── backend/
-└── frontend/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── middleware/
+│   └── uploads/
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   └── package.json
+│
+├── screenshots/
+│   └── task-manager-home.jpeg
+│
+└── README.md
 ```
+
+---
+
+## 📋 Prerequisites
+
+- Node.js (v18 or later)
+- npm
+- MongoDB Atlas account
 
 ---
 
@@ -67,31 +134,46 @@ npm start
 ```bash
 cd frontend
 npm install
-npm run dev
+npm start
 ```
 
 ---
 
-## 📸 Screenshots
+## 🚀 Future Enhancements
 
-_Add screenshots after deployment._
+- User authentication (JWT)
+- Task filtering and search
+- Due dates and reminders
+- Dark mode
+- Drag-and-drop task management
 
 ---
+
 
 ## 🌐 Live Demo
 
-**Frontend**
+### Frontend
 
-Coming Soon
+🔗 [Live Application](https://task-manager-mern-beta-orpin.vercel.app/)
 
-**Backend API**
+### Backend API
 
-https://task-manager-mern-4m1f.onrender.com
+🔗 [Backend API](https://task-manager-mern-4m1f.onrender.com/tasks)
+
+> **Note:** The backend is hosted on Render's free tier, so the first request may take 30–60 seconds while the server wakes up.
 
 ---
+
+## 📸 Application Preview
+
+![Task Manager Home](screenshots/task-manager-home.jpeg)
+
+## 📄 License
+
+This project is for learning and portfolio purposes.
 
 ## 👨‍💻 Author
 
 **Rahul Puri**
 
-GitHub: https://github.com/Rahul-PuriRepo
+GitHub: [Rahul-PuriRepo](https://github.com/Rahul-PuriRepo)
