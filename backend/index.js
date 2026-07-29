@@ -19,6 +19,9 @@ app.use(cors());
 app.use(express.json());
 app.use("/tasks", taskRoutes);
 app.use("/uploads", express.static("uploads"));
+app.get("/", (req, res) => {
+  res.send("Task Manager Backend API is running 🚀");
+});
 
 app.listen(PORT, () => {
   console.log(`Backend listening on Port ${PORT}!`);
